@@ -17,6 +17,12 @@ if __name__=='__main__':
 
 def score(txt):
  if royal_flush(txt):
-  scr+=100
- if straight_flush(txt):
-  scr+
+  scr+=10
+ elif straight_flush(txt):
+  scr+=9
+ elif four_kind(txt):
+  scr+=8
+ elif flush(txt):
+  scr+=7
+ elif staight(txt):
+  scr+=6
